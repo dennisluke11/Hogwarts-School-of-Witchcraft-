@@ -1,61 +1,59 @@
 package com.example.hogwarts.model;
-
-import android.os.Parcel;
-import android.os.Parcelable;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+public class Housess implements Serializable {
 
-public class House implements Serializable {
+
     @Expose
     @SerializedName("_id")
-    String _id;
+       String _id;
 
     @Expose
     @SerializedName("name")
-    String name;
+        String name;
 
     @Expose
     @SerializedName("mascot")
-    String mascot;
+       String mascot;
 
     @Expose
     @SerializedName("headOfHouse")
-    String headOfHouse;
+        String headOfHouse;
 
     @Expose
     @SerializedName("houseGhost")
-    String houseGhost;
+       String houseGhost;
 
 
     @Expose
     @SerializedName("founder")
-    String founder;
+        String founder;
 
 
     @Expose
     @SerializedName("__v")
-    int __v;
+        int __v;
 
     @Expose
     @SerializedName("school")
-    String school;
+         String school;
 
     @Expose
     @SerializedName("members")
-    List<String> members;
+        List<String> members;
 
     @Expose
     @SerializedName("values")
-    List<String> values;
+        List<String> values;
 
 
     @Expose
     @SerializedName("colors")
-    List<String> colors;
+        List<String> colors;
 
 
     public String get_id() {
@@ -145,7 +143,4 @@ public class House implements Serializable {
     public void setColors(List<String> colors) {
         this.colors = colors;
     }
-
 }
-
-

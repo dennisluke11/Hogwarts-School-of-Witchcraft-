@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/landingFragment">
+    <fragment
+        android:id="@+id/houseDetailsFragment2"
+        android:name="com.example.hogwarts.view.HouseDetailsFragment"
+        android:label="fragment_house_details"
+        tools:layout="@layout/fragment_house_details" >
+        <action
+            android:id="@+id/action_houseDetailsFragment2_to_charactersFragment"
+            app:destination="@id/charactersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseDetailsFragments"
+        android:name="com.example.hogwarts.view.HouseDetailsFragments"
+        android:label="HouseDetailsFragments" />
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.hogwarts.view.CharactersFragment"
+        android:label="CharactersFragment" >
+        <action
+            android:id="@+id/action_charactersFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.hogwarts.view.LandingFragment"
+        android:label="LandingFragment" >
+        <action
+            android:id="@+id/action_landingFragment_to_houseFragment"
+            app:destination="@id/houseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseFragment"
+        android:name="com.example.hogwarts.view.HouseFragment"
+        android:label="HouseFragment" >
+        <action
+            android:id="@+id/action_houseFragment_to_houseDetailsFragment2"
+            app:destination="@id/houseDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.hogwarts.view.CharacterFragment"
+        android:label="CharacterFragment" />
+</navigation>
